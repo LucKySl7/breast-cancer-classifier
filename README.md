@@ -24,14 +24,15 @@ A convolutional neural network (CNN) built with TensorFlow/Keras to classify bre
 └── datasets/                # Not included — see "Dataset" below
 ```
 
+
 ## Dataset
 
-The dataset (~277K image patches, organized into training/validation/testing splits) is not included in this repo due to its size. This project expects the data to follow the standard IDC breast histopathology dataset structure, with positive (cancerous) and negative (benign) patches sorted by patient. If you want to retrain the model, download the dataset, place it under `datasets/orig`, and run `build_dataset.py` to generate the training/validation/testing splits.
+The dataset (~277K image patches, organized into training/validation/testing splits) is not included in this repo due to its size. This project uses the [Breast Histopathology Images dataset](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images) from Kaggle, which contains positive (IDC-positive) and negative (benign) patches sorted by patient. If you want to retrain the model, download the dataset from Kaggle, place it under `datasets/orig`, and run `build_dataset.py` to generate the training/validation/testing splits.
 
 ## Setup
 
 ```bash
-git clone https://github.com/yourusername/breast-cancer-classifier.git
+git clone https://github.com/LucKySl7/breast-cancer-classifier.git
 cd breast-cancer-classifier
 
 python -m venv venv
